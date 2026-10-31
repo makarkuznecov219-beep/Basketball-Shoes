@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KICKS & HOOPS — Профессиональный магазин баскетбольной обуви</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <!-- БЭМ Стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-sneaker">
+
+    <!-- HEADER / НАВИГАЦИЯ -->
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav">
+                <a href="#hero" class="header__link">Главная</a>
+                <a href="#brands" class="header__link">Бренды</a>
+                <a href="#catalog" class="header__link">Каталог</a>
+                <a href="#reviews" class="header__link">Отзывы</a>
+            </nav>
+
+            <!-- Логотип справа сверху с подсветкой -->
+            <a href="#" class="header__logo logo-glow">
+                <i class="fa-solid fa-basketball logo-glow__icon"></i>
+                <span class="logo-glow__text">KICKS <span class="logo-glow__highlight">&</span> HOOPS</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO СЕКЦИЯ -->
+    <section id="hero" class="hero">
+        <div class="hero__container">
+           <!-- Левая колонка: 5 топ-баскетболистов и их кроссовки -->
+<div class="hero__players">
+    <h2 class="hero__players-title">ИКОНЫ ПАРКЕТА И ИХ СНИКЕРЫ</h2>
+
+    <div class="hero__players-grid">
+
+        <div class="player-card">
+            <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fwp-content%2Fblogs.dir%2F4%2Ffiles%2F2023%2F07%2Flebron-james-nike-lebron-21-first-look-0.jpg?cbr=1&fit=max&q=90&w=1080"
+                 alt="LeBron James wearing Nike LeBron 21"
+                 class="player-card__img">
+            <div class="player-card__overlay">
+                <span class="player-card__name">LeBron James</span>
+                <span class="player-card__model">Nike LeBron 21</span>
+            </div>
+        </div>
+
+        <div class="player-card">
+            <img src="https://img.chilling.tw/images/author/lui/UNDER%20ARMOUR%E8%88%87CURRY%20BRAND%E6%94%9C%E6%89%8BStephen%20Curry%E6%AD%A3%E5%BC%8F%E5%AE%A3%E5%91%8A%E8%BF%8E%E4%BE%86%E5%85%A8%E6%96%B0%20CURRY%20FLOW%2011%E7%B1%83%E7%90%83%E6%88%B0%E9%9D%B4%EF%BC%81.jpg"
+                 alt="Stephen Curry wearing Curry Flow 11"
+                 class="player-card__img">
+            <div class="player-card__overlay">
+                <span class="player-card__name">Stephen Curry</span>
+                <span class="player-card__model">Curry Flow 11</span>
+            </div>
+        </div>
+
+        <div class="player-card">
+            <img src="https://images.stockx.com/images/361-Degrees-BIG3-Future-Nikola-Jokic-PE.jpg?bg=FFFFFF&dpr=1&fit=fill&h=857&q=60&trim=color&updated_at=1718181511&w=1200"
+                 alt="361 Big3 Future Nikola Jokic PE"
+                 class="player-card__img">
+            <div class="player-card__overlay">
+                <span class="player-card__name">Nikola Jokić</span>
+                <span class="player-card__model">361° Big3 Future</span>
+            </div>
+        </div>
+
+        <div class="player-card">
+            <img src="https://image-cdn.hypb.st/https%3A/hypebeast.com/image/2024/02/kyrie-irving-anta-kai-1-artist-on-court-release-info-3.jpg?cbr=1&fit=max&q=75&w=800"
+                 alt="ANTA KAI 1 Kyrie Irving"
+                 class="player-card__img">
+            <div class="player-card__overlay">
+                <span class="player-card__name">Kyrie Irving</span>
+                <span class="player-card__model">ANTA KAI 1</span>
+            </div>
+        </div>
+
+        <div class="player-card">
+            <img src="https://static.luck-d.com/product/6319/main_carousel/NIKE_AIR_JORDAN_38_FUNDAMENTAL_DZ3356106_72240.webp"
+                 alt="Nike Air Jordan 38"
+                 class="player-card__img">
+            <div class="player-card__overlay">
+                <span class="player-card__name">Michael Jordan</span>
+                <span class="player-card__model">Air Jordan 38</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+            <!-- Правая колонка: Промо-текст -->
+            <div class="hero__promo">
+                <div class="hero__promo-badge">NEW COLLECTION 2026</div>
+                <h1 class="hero__promo-title">БОЛЕЕ 40 РАЗЛИЧНЫХ КРОССОВОК НА ВЫБОР</h1>
+                <p class="hero__promo-desc">Оригинальная игровая обувь для паркета и уличного баскетбола. Топовые бренды, идеальное сцепление и максимальная защита голеностопа.</p>
+                <a href="#catalog" class="hero__promo-btn">Перейти к каталогу</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN СЕКЦИЯ -->
+    <main class="main">
+        <!-- СЕКЦИЯ БРЕНДОВ (2 колонки + 3-я большая "ДРУГИЕ") -->
+        <section id="brands" class="brands">
+            <div class="brands__container">
+                <h2 class="brands__title">ВЫБЕРИ СВОЙ БРЕНД</h2>
+                <p class="brands__subtitle">Кликни на бренд, чтобы отфильтровать каталог из 40 моделей</p>
+
+                <div class="brands__grid">
+                    <!-- Колонка 1 -->
+                    <div class="brands__col">
+                        <button class="brand-card" onclick="CatalogModule.filterByBrand('Nike')">
+                            <span class="brand-card__name">NIKE</span>
+                            <span class="brand-card__count">10 моделей</span>
+                        </button>
+                        <button class="brand-card" onclick="CatalogModule.filterByBrand('Jordan')">
+                            <span class="brand-card__name">JORDAN</span>
+                            <span class="brand-card__count">6 моделей</span>
+                        </button>
+                        <button class="brand-card" onclick="CatalogModule.filterByBrand('adidas')">
+                            <span class="brand-card__name">ADIDAS</span>
+                            <span class="brand-card__count">5 моделей</span>
+                        </button>
+                        <button class="brand-card" onclick="CatalogModule.filterByBrand('PUMA')">
+                            <span class="brand-card__name">PUMA</span>
+                            <span class="brand-card__count">4 модели</span>
+                        </button>
+                        <button class="brand-card" onclick="CatalogModule.filterByBrand('Under Armour')">
+                            <span class="brand-card__name">UNDER ARMOUR</span>
+                            <span class="brand-card__count">3 модели</span>
+                        </button>
+                    </div>
+
+                    <!-- Колонка 2 -->
+                    <div class="brands__col">
+                        <button class="brand-card" onclick="CatalogModule.filterByBrand('361°')">
+                            <span class="brand-card__name">361°</span>
+                            <span class="brand-card__count">4 модели</span>
+                        </button>
+                        <button class="brand-card" onclick="CatalogModule.filterByBrand('ANTA')">
+                            <span class="brand-card__name">ANTA</span>
+                            <span class="brand-card__count">3 модели</span>
+                        </button>
+                        <button class="brand-card" onclick="CatalogModule.filterByBrand('Li-Ning')">
+                            <span class="brand-card__name">LI-NING</span>
+                            <span class="brand-card__count">2 модели</span>
+                        </button>
+                        <button class="brand-card" onclick="CatalogModule.filterByBrand('Rigorer')">
+                            <span class="brand-card__name">RIGORER</span>
+                            <span class="brand-card__count">2 модели</span>
+                        </button>
+                        <button class="brand-card" onclick="CatalogModule.filterByBrand('New Balance')">
+                            <span class="brand-card__name">NEW BALANCE</span>
+                            <span class="brand-card__count">1 модель</span>
+                        </button>
+                    </div>
+
+                    <!-- Большая 3-я колонка «ДРУГИЕ» -->
+                    <button class="brands__col-large" onclick="CatalogModule.showAllBrandsModal()">
+                        <div class="brands__col-large-content">
+                            <i class="fa-solid fa-shapes text-3xl mb-2 text-orange-500"></i>
+                            <span class="brands__col-large-title">ДРУГИЕ БРЕНДЫ</span>
+                            <span class="brands__col-large-desc">Показать все 40 доступных брендов и редкие коллаборации</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ КАТАЛОГА -->
+        <section id="catalog" class="catalog">
+            <div class="catalog__container">
+                <div class="catalog__header">
+                    <h2 class="catalog__title" id="catalogTitle">ВСЕ КРОССОВКИ (40 МОДЕЛЕЙ)</h2>
+                    <button class="catalog__reset-btn hidden" id="resetFilterBtn" onclick="CatalogModule.resetFilter()">
+                        <i class="fa-solid fa-xmark mr-1"></i> Сбросить фильтр
+                    </button>
+                </div>
+                <div class="catalog__grid" id="sneakersGrid"></div>
+            </div>
+        </section>
+
+        <!-- ОТЗЫВЫ -->
+        <section id="reviews" class="reviews">
+            <div class="reviews__container">
+                <h2 class="reviews__title">ОТЗЫВЫ ИГРОКОВ</h2>
+                <div class="reviews__grid">
+                    <div class="review-card">
+                        <div class="review-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="review-card__text">«Брал Nike LeBron 21 для центра. Гашение ударов просто космос, амортизация отрабатывает на 100%! Доставили быстро.»</p>
+                        <div class="review-card__author">
+                            <span class="review-card__name">Мирас К.</span>
+                            <span class="review-card__info">Игрок школьной команды (Center)</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="review-card__text">«Пара 361° превзошла ожидания. Отличный зацеп на уличной резиновой площадке, голеностоп сидит как влитой.»</p>
+                        <div class="review-card__author">
+                            <span class="review-card__name">Дмитрий С.</span>
+                            <span class="review-card__info">Streetball Player 3x3</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="review-card__text">«Оригинальные Curry 11. Легчайшие кроссовки для резких проходов и бросков с ведения. Рекомендую!»</p>
+                        <div class="review-card__author">
+                            <span class="review-card__name">Арлан М.</span>
+                            <span class="review-card__info">Point Guard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- МОДАЛЬНОЕ ОКНО: 40 БРЕНДОВ -->
+    <div id="allBrandsModal" class="modal">
+        <div class="modal__content">
+            <button class="modal__close" onclick="CatalogModule.closeModal('allBrandsModal')"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="modal__title">40 БАСКЕТБОЛЬНЫХ БРЕНДОВ</h3>
+            <p class="modal__desc">Выберите бренд для фильтрации моделей в каталоге:</p>
+            <div class="modal__brands-list" id="allBrandsList"></div>
+        </div>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО: ДЕТАЛИ И РЕКОМЕНДАЦИИ -->
+    <div id="sneakerDetailModal" class="modal">
+        <div class="modal__content modal__content--large">
+            <button class="modal__close" onclick="CatalogModule.closeModal('sneakerDetailModal')"><i class="fa-solid fa-xmark"></i></button>
+            <div class="sneaker-detail" id="sneakerDetailContent"></div>
+        </div>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО: ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ -->
+    <div id="privacyModal" class="modal">
+        <div class="modal__content">
+            <button class="modal__close" onclick="CatalogModule.closeModal('privacyModal')"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="modal__title">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h3>
+            <div class="modal__body-text text-xs text-neutral-300 space-y-2">
+                <p>1. Персональные данные клиентов защищены в соответствии с международными стандартами безопасности.</p>
+                <p>2. Информация используется исключительно для обработки заказов на баскетбольную экипировку.</p>
+                <p>3. Магазин гарантирует 100% оригинальность всей представленной продукции.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__brand">
+                <span class="footer__logo">KICKS & HOOPS</span>
+                <p class="footer__text">Твой главный гид в мире профессиональной баскетбольной обуви.</p>
+            </div>
+            <div class="footer__links">
+                <button onclick="CatalogModule.openPrivacyModal()" class="footer__link-btn">Политика конфиденциальности</button>
+                <span class="footer__copy">&copy; 2026 KICKS & HOOPS. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
